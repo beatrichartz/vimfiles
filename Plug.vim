@@ -243,6 +243,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'rust-lang/rust.vim'
   " }}}
 
+  " C {{{
+    Plug 'vim-scripts/c.vim'
+  " }}}
+
   " Rust {{{
     Plug 'neovimhaskell/haskell-vim'
   " }}}
