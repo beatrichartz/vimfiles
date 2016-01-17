@@ -5,7 +5,10 @@ call plug#begin('~/.vim/plugged')
 " }}}
 
 " Navigation {{{
-  " Displays tags in a window, ordered by scope
+  Plug 'junegunn/fzf', { 'do': 'yes \| ./install'  }
+  Plug 'junegunn/fzf.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'FelikZ/ctrlp-py-matcher'
   Plug 'majutsushi/tagbar'
 
   " A tree explorer plugin for vim
@@ -13,16 +16,8 @@ call plug#begin('~/.vim/plugged')
 
   " project configuration via 'projections'
   Plug 'tpope/vim-projectionist'
-
-  " A command-line fuzzy finder written in Go
-  Plug 'junegunn/fzf', { 'do': 'yes \| ./install'  }
-  if !has('nvim')
-    " Active fork of kien/ctrlp.vim. Fuzzy file, buffer, mru, tag, etc finder.
-    Plug 'ctrlpvim/ctrlp.vim'
-
-    " Fast vim CtrlP matcher based on python
-    Plug 'FelikZ/ctrlp-py-matcher'
-  endif
+  Plug 'christoomey/vim-tmux-navigator'
+  Plug 'vim-scripts/gitignore'
 " }}}
 
 " UI Additions {{{
@@ -155,6 +150,8 @@ call plug#begin('~/.vim/plugged')
 
   " utility for configuring maktaba plugins
   Plug 'google/vim-glaive'
+  Plug 'munshkr/vim-tidal'
+  Plug 'sbl/scvim'
 " }}}
 
 " Automatic Helpers {{{
@@ -219,6 +216,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-cucumber',          { 'for': ['cucumber']     }
   " }}}
 
+  " Elixir {{{
+    Plug 'elixir-lang/vim-elixir',      { 'for': ['elixir'] }
+    Plug 'mattreduce/vim-mix'
+  " }}}
+
   " Clojure {{{
     Plug 'guns/vim-clojure-static', { 'for': ['clojure'] }
     Plug 'tpope/vim-classpath'
@@ -241,8 +243,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'rust-lang/rust.vim'
   " }}}
 
-  " Docker {{{
-    Plug 'honza/dockerfile.vim'
+  " Rust {{{
+    Plug 'neovimhaskell/haskell-vim'
   " }}}
 
   " Markdown {{{

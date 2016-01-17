@@ -77,11 +77,13 @@ if executable('ag')
   set grepprg=ag\ --nogroup\ --column\ --smart-case\ --nocolor\ --follow
   set grepformat=%f:%l:%c:%m
 endif
+let g:ctrlp_user_command = 'git --git-dir=%s/.git ls-files -oc --exclude-standard' " Respect gitignore in user search
 " }}}
 
 " Visual {{{
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
+set shiftwidth=4
 " }}}
 
 " Sounds {{{
@@ -94,3 +96,10 @@ set mousehide  " Hide mouse after chars typed
 set mouse=a  " Mouse in all modes
 " }}}
 
+" Clipboard {{{
+set clipboard=unnamed
+" }}}
+
+" Leader {{{
+let maplocalleader=","
+" }}}
