@@ -283,12 +283,16 @@ call plug#begin('~/.vim/plugged')
     Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
   " }}}
 
+  " Nginx {{{
+    Plug 'fatih/vim-nginx'
+  " }}}
+
   " Fish {{{
     Plug 'dag/vim-fish', { 'for': 'fish' }
   " }}}
 
   " Elm {{{
-    Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
+    Plug 'elmcast/elm-vim', { 'for': 'elm' }
   " }}}
 " }}}
 

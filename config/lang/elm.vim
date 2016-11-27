@@ -5,3 +5,6 @@ endif
 
 " show types in autocomplete menu
 let g:elm_detailed_complete = 1
+
+" format on autosave
+let g:elm_format_autosave = 1

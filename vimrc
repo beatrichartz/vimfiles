@@ -41,6 +41,7 @@ runtime! config/plugin/signify.vim
 runtime! config/plugin/tagbar.vim
 runtime! config/plugin/undotree.vim
 runtime! config/livecoding.vim
+runtime! config/mappings.vim
 
 if has('nvim')
   runtime! config/plugin/fzf.vim
